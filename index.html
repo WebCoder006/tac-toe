@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="myntra.webp" type="image/x-icon">
+    <title>Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra</title>
+    <style>
+
+/* SOME IMPORTANT LINES FOR CSS TO MAINTAIN THE SITE MORE RESPONSITIVE BY PROPERTIES OF FLEXBOX ... */
+    .flex{
+        display: flex;
+    }
+    .items-center{
+        align-items: center;
+    }
+    .justify-center{
+        justify-content: center;
+    }
+    .space-between{
+        justify-content: space-between;
+    }
+    .uppercase{
+        text-transform: uppercase;
+    }
+    .semibold{
+        font-weight: bold;
+    }
+    .mx-2{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+/* MAIN CSS ( STYLESHEET ) LINES/CODE'S */
+    html, body {
+        height: 150%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+    }
+    header{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: sticky;
+        top: 0;
+        background: white;
+    }
+    .rightbox{
+        display: flex;
+        margin: 5px;
+    }
+    .left img{
+        width: 62px;
+        height: 60px;
+    }
+    .container{
+        padding: 0 10vw;
+    }
+    .containerheader{
+        padding: 0 10vw;
+    }
+    nav{
+        font-size: 15px;
+        row-gap: 20px;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 0 12px;
+    }
+    .section1{
+        background: #f2f2f2;
+    }
+    .Search{
+        width: 23.5vw;
+        padding: 7px 17px;
+        border: 0.6px solid grey;
+        background: #f7f8fd;
+        border-radius: 5px;
+    }
+    .homeimg{
+        width: 80vw;
+        margin: 8px 0;
+    }
+    .itemimg{
+        width: 15.8vw;
+        margin: 0 2.1px;
+    }
+    .footer{
+        display: flex;
+        padding: 60px 110px;
+        justify-content: space-around;
+        text-align: center;
+        background: #f2f2f2;
+    }
+    .footer ul li{
+        list-style: none;
+        font-size: 0.9rem;
+        color: rgba(70, 69, 69, 0.768);
+        font-weight: bold;
+        margin-top: -5px;
+    }
+    .footer-fifth li{
+        list-style: none;
+    }
+    .logopicimg{
+        width: 60px;
+    }
+    #socialimg h3{
+        text-align: center;
+    }
+    #socialimg li{
+        list-style: none;
+    }
+    .parabox h3{
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: -25px;
+        font-weight: bold;
+        background: #f2f2f2;
+    }
+    .parabox p{
+        color: rgba(70, 69, 69, 0.768);
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-align: center;
+        background: #f2f2f2;
+    }
+    .footerline{
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: rgb(9, 1, 9);
+        background: #f2f2f2;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN ... */
+    @media (max-width: 1170px) {
+        nav ul li {
+            list-style: none;
+            padding: 0 4px;
+            font-size: 12px;
+        }
+        .containerheader {
+            padding: 0 2vw;
+        }
+        header{
+            height: 140px;
+        }
+        nav{
+            flex-direction: column;
+            align-items: center;
+        }
+        .right{
+            flex-direction: column;
+        }
+        .rightbox{
+            display: flex;
+            margin: 5px;
+        }
+        .Search{
+            width: 60vw;
+            margin-top: -5px;
+        }
+        .footer{
+            flex-direction: column;
+            margin-left: -5%;
+            text-align: center;
+        }
+    }
+
+        </style>
+    </head>
+<body>
+    <header class="containerheader">
+        <nav class="flex space-between">
+            <div class="left flex items-center">
+                <img src="myntra.webp">
+                    <ul class="flex items-center justify-center uppercase semibold">
+                        <li>HOME</li>
+                        <li>KIDS</li>
+                        <li>MEN</li>
+                        <li>WOMEN</li>
+                        <li>BEAUTY</li>
+                        <li>STUDIO</li>
+                    </ul>
+                </div>
+            <div class="right flex items-center">
+                <input class="Search" placeholder="Search For Products, Brands & More" class="Desktop-SearchBar" value="" data-reactid="904">
+            <div class="rightbox">
+                <div class="profile mx-2">Profile</div>
+                <div class="wishlist mx-2">Wishlist</div>
+                <div class="bag mx-2">Bag</div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container section1">
+        <img class="homeimg" src="J23_T3_PC_Unrec_CTile_LATV_V2._CB577491283_.jpg">
+        <img class="homeimg" src="CUsersvishnDesktopMintra Clonesk.jpg">
+        <img class="homeimg" src="J23_T3_PC_Unrec_CTile_OHL_V2._CB577491283_.jpg">
+        <img class="homeimg" src="pc-eng._SX3000_QL85_.jpg">
+        <img class="homeimg" src="b9aa3c3d-17a5-4d5e-afed-ba679d629a0d1693375596341-DB.webp">
+        <img class="homeimg" src="673c184f-4970-4534-a3ee-af23ebf95c731696438098430-App-Install-Banner--3-.webp">
+        <img class="homeimg" src="CUsersvishnDesktopMintra Clone0101.webp">
+        <img class="homeimg" src="CML_PC._SX3000_QL85_.jpg">
+    </section>
+
+    <section class="container section1 flex">
+
+        <marquee direction="up">
+            <img class="itemimg" src="Group_284._SY530_QL85_FMpng_.png">
+        </marquee>
+
+        <marquee direction="down">
+            <img class="itemimg" src="Group_285._SY530_QL85_FMpng_.png">
+        </marquee>
+
+        <marquee direction="up">
+            <img class="itemimg" src="Group_305._SY530_QL85_FMpng_.png">
+        </marquee>
+
+        <marquee direction="down">
+            <img class="itemimg" src="Group_306._SY530_QL85_FMpng_.png">
+        </marquee>
+
+        <marquee direction="up">
+            <img class="itemimg" src="Group_308._SY530_QL85_FMpng_.png">
+        </marquee>
+
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <ul>
+                    <h3>ONLINE SHOPPING</h3>
+                      <li>Men</li>
+                      <li>Women</li>
+                      <li>Home & Living</li>
+                      <li>Kids</li>
+                      <li>Gift Cards</li>
+                      <li>myntra Insider</li>
+                </ul>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <h3>CUSTOMER POLICIES</h3>
+                      <li>Contact Us</li>
+                      <li>FAQ</li>
+                      <li>T&C</li>
+                      <li>Terms Of Use</li>
+                      <li>Track Orders</li>
+                      <li>Shipping</li>
+                      <li>Cancellation</li>
+                      <li>Returns</li>
+                      <li>Privacy policy</li>
+                      <li>Grievance Officer</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                        <h3>USEFUL LINKS</h3>
+                      <li>Blog</li>
+                      <li>Careers</li>
+                      <li>Site Map</li>
+                      <li>Whitehat</li>
+                      <li>Corporate Information</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                        <h3>REGISTERED OFFICE ADDRESS</h3>
+                    <li>Varthur Hobli,</li>
+                    <li>Buildings Alyssa,</li>
+                    <li>Outer Ring Road,</li>
+                    <li>Bengaluru – 560103, India</li>
+                    <li>Devarabeesanahalli Village,</li>
+                    <li>Begonia and Clover situated in Embassy Tech Village,</li>
+                </ul>
+            </div>
+            <div class="footer-fifth">
+                <li>
+                    <img class="logopicimg" src="6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png">
+                </li>
+                <li>
+                        100% ORIGINAL guarantee for all products at myntra.com
+                </li>
+                <li>
+                    <img class="logopicimg" src="becb1b16-86cc-4e78-bdc7-7801c17947831684737106127-Return-Window-image.png">
+                </li>
+                <li>
+                        Return within 14days of receiving your order
+                </li>
+            </div>
+        </div>
+    </footer>
+    <footer class="parabox">
+            <h3>
+                Myntra Studio - The Personalised Fashion Feed You Wouldn’t Want To Miss Out On
+            </h3>
+        <p>
+        The world wide web is evolving at a relentless pace, and with an accelerated growth each passing year, there is bound to be an overwhelming surge of online content.<br/>
+        It was for this very reason that personalisation of search feeds was proposed as a solution to combat the overload of irrelevant information.<br/>
+        Several social media platforms such as Facebook and Instagram along with various online shopping websites have chosen to help filter content, increasing user engagement,
+        retention and customer loyalty.<br/>
+        Myntra is one such online shopping website that joins the list of platforms that help curate a personalised fashion feed.<br/>
+        Named theMyntra Studio, this personalised
+        search feed brings you the latest men and women’s fashion trends, celebrity styles, branded content and daily updates from your favourite fashion labels.<br/>
+        If you are wondering how impactful Myntra Studio can be, we are listing out five perks of having a rich, meaningful, and personalised fashion feed in your life.<br/>
+        </p>
+    </footer>
+    <footer class="footerline">
+        <marquee direction="left">
+            © 2023 www.myntra.com || All rights reserved.
+        </marquee>
+    </footer>
+ <!-- < JAVASCRIPT CODE /> -->
+        <script>
+            alert("Safe Browing")
+        </script>
+    </body>
+</html>
